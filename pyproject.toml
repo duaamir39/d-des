@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "d-des"
 version = "0.1.0"
 authors = [
-  { name="Senior Cryptography Engineer" },
+  { name="Dua Amir", email="duaamir392004@gmail.com" },
 ]
 description = "Dynamic Data Encryption Standard (D-DES) with a single dynamic S-box."
 readme = "README.md"
@@ -19,7 +19,7 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/yourusername/d-des"
+"Homepage" = "https://github.com/duaamir39/d-des.git"
 
 [project.scripts]
 ddes-cli = "ddes.cli:main"
