@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "d-des"
+name = "ddes-dua-crypto"
 version = "0.1.0"
 authors = [
   { name="Dua Amir", email="duaamir392004@gmail.com" },

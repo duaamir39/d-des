@@ -18,9 +18,9 @@ D-DES is a custom implementation of the classic DES (Data Encryption Standard) b
 
 ## Installation
 
-You can install the package directly from the source. In your terminal, run:
+You can install the package directly from PyPI. In your terminal, run:
 ```bash
-pip install -e .
+pip install ddes-dua-crypto
 ```
 
 ## CLI Usage
