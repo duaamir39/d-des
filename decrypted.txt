@@ -1,0 +1,1 @@
+This is a highly classified message intended to test the CBC mode of the Dynamic Data Encryption Standard (D-DES). If you are reading this after decryption, the cipher worked flawlessly!

@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: d-des
+Version: 0.1.0
+Summary: Dynamic Data Encryption Standard (D-DES) with a single dynamic S-box.
+Author: Senior Cryptography Engineer
+Project-URL: Homepage, https://github.com/yourusername/d-des
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+
+# D-DES (Dynamic Data Encryption Standard)
+
+D-DES is a custom implementation of the classic DES (Data Encryption Standard) block cipher, modified to feature a **Dynamic S-Box**. 
+
+## Features
+- Standard 64-bit block size and 56-bit effective key.
+- 16 Feistel rounds.
+- **Dynamic S-Box**: Replaces the 8 static S-boxes with a single, dynamically generated $6 \times 4$ S-box seeded by the encryption key.
+
+## Installation
+
+You can install the package directly from the source:
+```bash
+pip install .
+```
+
+## Usage
+
+```python
+from ddes import DDESCipher
+
+key = b'8bytekey'
+cipher = DDESCipher(key)
+
+plaintext = b'Hello World!'
+ciphertext = cipher.encrypt(plaintext)
+print(f"Ciphertext: {ciphertext.hex()}")
+
+decrypted = cipher.decrypt(ciphertext)
+print(f"Decrypted: {decrypted}")
+```
