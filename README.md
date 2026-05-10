@@ -5,7 +5,7 @@
 D-DES is a custom implementation of the classic DES (Data Encryption Standard) block cipher, modified to feature a **Dynamic S-Box**. 
 
 ## Requirements
-- **Python 3.13.3+**: This library leverages modern Python type hinting and bit-manipulation features. Ensure you are running Python 3.13.3 or higher.
+- **Python 3.8+**: This library leverages Python type hinting and bit-manipulation features. Ensure you are running Python 3.8 or higher.
 
 ## Features
 - Standard 64-bit block size and 56-bit effective key.

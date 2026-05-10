@@ -1,8 +1,9 @@
 import json
 import os
 import datetime
+from typing import List, Tuple
 
-def permute(block: int, table: list[int], input_size: int, output_size: int) -> int:
+def permute(block: int, table: List[int], input_size: int, output_size: int) -> int:
     """Permute an integer block using the given table."""
     output = 0
     for i, bit_pos in enumerate(table):
@@ -13,7 +14,7 @@ def permute(block: int, table: list[int], input_size: int, output_size: int) -> 
         output |= (bit << (output_size - 1 - i))
     return output
 
-def split_half(block: int, size: int) -> tuple[int, int]:
+def split_half(block: int, size: int) -> Tuple[int, int]:
     """Split an integer block into two halves."""
     half_size = size // 2
     mask = (1 << half_size) - 1
